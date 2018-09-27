@@ -217,22 +217,22 @@ public class YUVUtil {
   }
 
   public static byte[] rotateNV21(byte[] data, int width, int height, int rotation) {
-    Log.i("rotateNV21")
+    Log.i("rotateNV21");
     switch (rotation) {
       case 0:
-        Log.i("rotateNV21 case 0")
+        Log.i("rotateNV21 case 0");
         return data;
       case 90:
-        Log.i("rotateNV21 case 90")
+        Log.i("rotateNV21 case 90");
         return rotateNV21Degree90(data, width, height);
       case 180:
-        Log.i("rotateNV21 case 180")
+        Log.i("rotateNV21 case 180");
         return rotateNV21Degree180(data, width, height);
       case 270:
-        Log.i("rotateNV21 case 270")
+        Log.i("rotateNV21 case 270");
         return rotateNV21Degree270(data, width, height);
       default:
-        Log.i("rotateNV21 case default")
+        Log.i("rotateNV21 case default");
         return null;
     }
   }
