@@ -217,7 +217,7 @@ public class YUVUtil {
   }
 
   public static byte[] rotateNV21(byte[] data, int width, int height, int rotation) {
-    Log.i("rotateNV21");
+    Log.i("rotateNV21", "value ::: " + rotation);
     switch (rotation) {
       case 0:
         Log.i("rotateNV21 case 0");

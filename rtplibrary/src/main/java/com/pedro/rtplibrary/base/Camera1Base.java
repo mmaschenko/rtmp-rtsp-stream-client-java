@@ -355,6 +355,7 @@ public abstract class Camera1Base
    * @param orientation of the camera preview. Could be 90, 180, 270 or 0.
    */
   public void setPreviewOrientation(int orientation) {
+    Log.e(TAG, "MIKLE::: setPreviewOrientation");
     cameraManager.setPreviewOrientation(orientation);
   }
 
