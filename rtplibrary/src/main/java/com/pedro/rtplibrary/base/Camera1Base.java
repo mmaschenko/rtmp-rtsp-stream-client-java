@@ -356,6 +356,8 @@ public abstract class Camera1Base
    */
   public void setPreviewOrientation(int orientation) {
     Log.e(TAG, "MIKLE::: setPreviewOrientation");
+    Toast.makeText(this, "MIKLE::: setPreviewOrientation " + orientation,
+        Toast.LENGTH_SHORT).show();
     cameraManager.setPreviewOrientation(orientation);
   }
 
